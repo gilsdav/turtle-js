@@ -15,41 +15,63 @@
          <p>Created by <a href="https://twitter.com/raimohanska">@raimohanska</a>. More info on <a href="https://github.com/raimohanska/turtle-js">Github</a>.</p>
        </div>
      </div>
-     <div id="turtle-roy" class="loading">
-       <div class="loading-indicator">
-         PLEASE WAIT...
-       </div>
-       <div class="turtlegraphics">
-       </div>
-       <div class="console">
-         <a class="editor-link" href="#">show editor</a>
-       </div>
-       <div class="editor">
-         <div class="links">
-           <a class="run-link" href="#" title="run (ctrl-space)">run</a>
-           |
-           <a class="editor-link" href="#">show console</a>
-         </div>
-         <textarea></textarea>
-         <em class="error"></em>
-       </div>
-     <div id="bottom">
-       <div id="share">
-         <label>Save & Share</label>
-         <form>
-           <input id="nick" placeholder="your nickname">
-           <input id="description" placeholder="program name" autocomplete="off">
-           <button>Save</button><em class="ajax"></em>
-           <a href="#">Link to share</a>
-         </form>
-       </div>
-       <div id="cookbook">
-         <label>Examples</label>
-         <ul>
-         </ul>
-       </div>
-     </div>
-    </div>
+      <div class="container">
+        <div id="turtle-roy" class="loading left">
+          <div class="loading-indicator">
+            PLEASE WAIT...
+          </div>
+          <div class="turtlegraphics">
+          </div>
+          <div class="console">
+            <a class="editor-link" href="#">show editor</a>
+          </div>
+          <div class="editor">
+            <div class="links">
+              <a class="run-link" href="#" title="run (ctrl-space)">run</a>
+              |
+              <a class="editor-link" href="#">show console</a>
+            </div>
+            <textarea></textarea>
+            <em class="error"></em>
+          </div>
+        <!-- <div id="bottom">
+          <div id="share">
+            <label>Save & Share</label>
+            <form>
+              <input id="nick" placeholder="your nickname">
+              <input id="description" placeholder="program name" autocomplete="off">
+              <button>Save</button><em class="ajax"></em>
+              <a href="#">Link to share</a>
+            </form>
+          </div>
+          <div id="cookbook">
+            <label>Examples</label>
+            <ul>
+            </ul>
+          </div>
+        </div> -->
+        </div>
+        <div class="right">
+          Ce que tu peux demander à la tortue:
+          <ul>
+            <li>avance(<i>distance</i>)</li>
+            <li>recule(<i>distance</i>)</li>
+            <li>tourneAGauche(<i>puissance</i>)</li>
+            <li>tourneADroite(<i>puissance</i>)</li>
+            <li>leveLeCrayon()</li>
+            <li>pauseLeCrayon()</li>
+            <li>bouge()</li>
+            <li>epaisseur(<i>epaisseur</i>)</li>
+            <li>changeForme(<i>typeDeForme</i>)</li>
+            <li>couleurFont(<i>couleur</i>)</li>
+            <li>couleurTrace(<i>couleur</i>)</li>
+            <li>nettoie()</li>
+          </ul>
+          <!-- <ul>
+            <li>boucle(<i>nombre</i>, <i>action</i>, <i>parametre</i>)</li>
+          </ul> -->
+        </div>
+      </div>
      <div id="audio"></div>
      </div>
     <script src="script/ga.js"></script>

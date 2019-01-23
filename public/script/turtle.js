@@ -1,5 +1,5 @@
 "use strict";
-define(["smoothly", "recorder"], function(Smoothly, Recorder) {
+define(["smoothly", "recorder", "french"], function(Smoothly, Recorder, translateApiInFrench) {
   var Turtle = function(element, w, h) {
     function xCenter() { return w / 2 }
     function yCenter() { return h / 2 }
@@ -19,8 +19,6 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
     paper.save()
     turtle.save()
 
-    init()
-
     function fontWithSize(size) {
       return size + "px Courier"
     }
@@ -37,6 +35,7 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
       paper.font=fontWithSize(20)
       setColor("black")
       drawTurtle()
+      api.setshape("turtle");
     }
     function setBackground(color) {
       element.css("background-color", color);
@@ -173,6 +172,11 @@ define(["smoothly", "recorder"], function(Smoothly, Recorder) {
         turtleToHome()
       })
     }
+
+    api = Object.assign(api, translateApiInFrench(api));
+
+    init()
+
     var recorder = Recorder(api)
     return recorder
   }

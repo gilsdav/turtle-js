@@ -320,3 +320,18 @@ a:visited {
   background: #073642;
   padding: 1em;
 }
+
+.left {
+  width: calc(100% - 300px);
+}
+
+.right {
+  width: 280px;
+  background-color: #a4b7b9;
+  color: black;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+}

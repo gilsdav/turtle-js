@@ -1,7 +1,7 @@
 "use strict";
 define(["bacon","jq-console"], function(Bacon) {
-  var welcomeMessage = "Welcome to Turtle JS.\nTry one of the examples below.\n"
-  var promptLabel = 'JS> '
+  var welcomeMessage = "Bienvenue sur Turtle JS.\n"
+  var promptLabel = 'Que puis-je faire ? '
   function fmt(value, className) {
     return {msg: value, className: "jqconsole-" + className};
   }

@@ -14,6 +14,7 @@ require.config({
     ,"text": "../lib/text"
     ,"speak": "../speak.js/speakClient"
     ,"parsestack": "../lib/parse-stack"
+    ,"french": "./french-api"
   },
   shim: {
     'jq-console': {
@@ -32,7 +33,7 @@ require(["lodash", "jquery", "jsenv", "jsrepl", "turtle", "turtlebundle", "edito
     $("body").addClass("embedded")
     overhead = 200
   }
-  function width() { return $("body").width() }
+  function width() { return $("body").width() - 300 }
   function height() { 
     return Math.min(width() / 2, $(window).height() - overhead)
   }
