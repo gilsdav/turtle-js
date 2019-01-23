@@ -11,8 +11,8 @@ define([], function() {
             bouge: api.spin,
             epaisseur: api.penwidth,
             changeForme: api.setshape,
-            font: api.bg,
-            couleur: api.color,
+            couleurFont: api.bg,
+            couleurTrace: api.color,
             nettoie: api.clear
             // boucle: function(nbr, action, param) {
             //     for(var i = 0; i < nbr; i++) {
